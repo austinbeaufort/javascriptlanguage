@@ -93,3 +93,61 @@
 // div.outerHTML = '<p>a new element!</p>';
 
 // alert(div.outerHTML); // the div is still the same? but the outer context in the browser has changed..
+
+
+
+// NODE VALUE / DATA: TEXT NODE CONTENT
+
+// THE 'INNERHTML' PROPERTY IS ONLY VALID FOR ELEMENT NODES.
+// OTHER NODES HAVE 'NODEVALUE' AND 'DATA' PROPERTIES.
+
+// let text = document.body.firstChild;
+// alert(text.data); // Hello
+
+// let comment = text.nextSibling;
+// alert( comment.data ); //comment
+
+
+
+// TEXTCONTENT: PURE TEXT
+// the textContent provides access to the text inside the element. Not the tags.
+
+
+// alert(news.textContent);
+
+
+
+// let name = prompt("what's your name?", "<b> Winnie-the-pooh!</b>");
+
+// elem1.innerHTML = name;
+// elem2.textContent = name;
+
+
+
+// THE 'HIDDEN' PROPERTY
+
+// elem.hidden = true;
+
+// works the same as style="display: none".
+
+// setInterval(() => elem.hidden = !elem.hidden, 1000);
+
+
+
+// MORE PROPERTIES
+// value: value for input, select, and textarea.
+// href
+// id
+
+// alert(elem.type);
+// alert(elem.id);
+// alert(elem.value);
+
+
+
+// for (let li of document.querySelectorAll('li')) {
+//     let title = li.firstChild.data;
+//     let num = li.getElementsByTagName('li').length;
+//     alert(title + ": " + num);
+// }
+

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MODIFYING THE DOCUMENT</title>
+</head>
+<body>
+        <!-- <table id="table">
+                aaa
+                <tr>
+                  <td>Test</td>
+                </tr>
+              </table>
+              
+              <script>
+                alert(table); // the table, as it should be
+              
+                table.remove();
+                // why there's still aaa in the document?
+              </script> -->
+
+
+
+    <!-- <ol id="elem">
+        <li>Hello</li>
+        <li>World</li>
+    </ol>
+
+    <script>
+        function clear(elem) {
+            while (elem.firstChild) {
+                elem.firstChild.remove();
+            }
+
+            // or elem.innerHTML = '';
+        }
+
+        clear(elem);
+    </script>
+               -->
+
+<!-- 
+        <div id="elem1"></div>
+        <div id="elem2"></div>
+        <div id="elem3"></div>
+        <script>
+          let text = '<b>text</b>';
+        
+          elem1.append(document.createTextNode(text));
+          elem2.textContent = text;
+          elem3.innerHTML = text;
+        </script> -->
+
+
+    <!-- <style>
+        .alert {
+        padding: 15px;
+        border: 1px solid #d6e9c6;
+        border-radius: 4px;
+        color: #3c763d;
+        background-color: #dff0d8;
+        }
+    </style>
+
+    <script>
+        let div = document.createElement('div');
+        div.className = 'alert alert-success';
+        div.innerHTML = "<strong>hi there</strong> you've read a message";
+
+        document.body.append(div); // appends the div to the body.
+        setTimeout(() => div.remove(), 2000); // removes the div after 2 seconds.
+    </script>
+                 -->
+
+
+
+    <!-- <div id="first">First</div>
+    <div id="second">Second</div>
+
+    <script>
+        second.after(first);
+    </script> -->
+
+
+        <!-- <style>
+        .alert {
+        padding: 15px;
+        border: 1px solid #d6e9c6;
+        border-radius: 4px;
+        color: #3c763d;
+        background-color: #dff0d8;
+        }
+        </style>
+                
+        <div class="alert" id="div">
+            <strong>Hi there!</strong> You've read an important message.
+        </div>
+
+        <script>
+            let div2 = div.cloneNode(true);  // clone the message
+            div2.querySelector('strong').innerHTML = 'bye there!'; // change part of the clone
+
+            div.after(div2);  // append the clone after the existing div.
+        </script> -->
+
+
+    <!-- <div id="div"></div>
+
+    <script>
+        div.inserAdjacentHTML('beforebegin', '<p>Hello</p>');
+        div.inserAdjacentHTML('afterend', '<p>Bye</p>');
+    </script> -->
+
+
+    <!-- <div id="div"></div>
+    <script>
+    div.before('<p>Hello</p>', document.createElement('hr'));
+    </script> -->
+
+<!-- 
+    <ol id="ol">
+        <li>0</li>
+        <li>1</li>
+        <li>2</li>
+    </ol>
+
+    <script>
+        ol.before('before'); // appends text node before.
+        ol.after('after');   // ditto after
+
+        let prepend = document.createElement('li'); // creates li and binds it to prepend
+        prepend.innerHTML = 'prepend'; // adds 'prepend' to text HTML.
+        ol.prepend(prepend);
+
+        let append = document.createElement('li');
+        append.innerHTML = 'append';
+        ol.append(append);
+
+    </script> -->
+
+
+
+
+    <!-- <script>
+        let newLi = document.createElement('li'); // creates new li element.
+        newLi.innerHTML = "hello, world"; // appends text to the newLi
+
+        list.insertBefore(newLi, list.children[1]);
+    </script> -->
+
+
+
+
+    <!-- <style>
+    .alert {
+        padding: 15px;
+        border: 1px solid #d6e9c6;
+        border-radius: 4px;
+        color: #3c763d;
+        background-color: #dff0d8;
+    }
+    </style>
+
+    <script>
+        let div = document.createElement('div');
+        div.className = "alert alert-success";
+        div.innerHTML = "<strong>Hi there</strong> you read a message";
+
+        document.body.appendChild(div);
+    </script> -->
+
+
+    <!-- <div class="alert">
+        <strong>hi there!</strong> You've read an important message.
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+    <script src="modify.js"></script>
+</body>
+</html>

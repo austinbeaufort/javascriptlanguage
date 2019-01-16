@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Attributes and Properties</title>
+</head>
+<body>
+        <!-- <a name="list">the list</a>
+        <ul>
+          <li><a href="http://google.com">http://google.com</a></li>
+          <li><a href="/tutorial">/tutorial.html</a></li>
+          <li><a href="local/path">local/path</a></li>
+          <li><a href="ftp://ftp.com/my.zip">ftp://ftp.com/my.zip</a></li>
+          <li><a href="http://nodejs.org">http://nodejs.org</a></li>
+          <li><a href="http://internal.com/test">http://internal.com/test</a></li>
+        </ul>
+
+        <script>
+            let links = document.querySelectorAll('[href]');
+
+            for (let link of links) {
+                let url = link.getAttribute('href'); // gets the value of each 'href' attribute.
+                if (url.includes('://') && !url.includes('internal')) {
+                    link.style.color = 'orange';
+                }
+            }
+
+
+        
+        </script> -->
+
+    <!-- <div data-widget-name="menu">Choose the genre</div>
+    
+    <script>
+        let myDiv = document.querySelector('div');
+        alert(myDiv.getAttribute('data-widget-name'));
+    </script> -->
+
+
+        <!-- <style>
+                .order[data-order-state="new"] {
+                  color: green;
+                }
+              
+                .order[data-order-state="pending"] {
+                  color: blue;
+                }
+              
+                .order[data-order-state="canceled"] {
+                  color: red;
+                }
+              </style>
+
+<div id="order" class="order" data-order-state="new">
+        A new order.
+      </div>
+
+      <script>
+      alert(order.dataset.orderState); // new
+      </script> -->
+
+
+
+    <!-- <div data-about="elephants"></div>
+
+    <script>
+        alert(document.div.dataset.about);
+    </script> -->
+
+
+    <!-- <div show-info="name"></div>
+    <div show-info="age"></div>
+
+    <script>
+        let user = {
+            name: 'pete',
+            age: 25
+        };
+
+        for (let div of document.querySelectorAll('[show-info]')) {
+            // insert the info into HTML field..
+            let field = div.getAttribute('show-info');
+            div.innerHTML = user[field];
+        }
+    </script> -->
+
+
+    <!-- <a href="#hello" id="a">link</a>
+
+    <script>
+        // attribute
+        alert(a.getAttribute('href')); // #hello
+
+        //property
+        alert(a.href); // full URL
+    </script> -->
+
+
+    <!-- <div id="div" style="color:red;font-size:120%">Hello</div>
+    
+    <script>
+    // string
+    alert(div.getAttribute('style')); 
+
+    // object
+    alert(div.style); // [object CSSStyleDeclaration]
+    alert(div.style.color); // red
+    </script> -->
+
+
+
+
+    <!-- <input id="input" type="checkbox" checked> checkbox -->
+
+    <!-- <div id="elem" about="Elephant"></div> -->
+
+
+
+    <script src="attandprop.js"></script>
+</body>
+</html>
