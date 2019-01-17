@@ -7,6 +7,59 @@
     <title>MODIFYING THE DOCUMENT</title>
 </head>
 <body>
+
+    <!-- <div id="calander"></div>
+
+    <script>
+    
+        function createCalendar(elem, year, month) {
+            let mon = month - 1;
+            let d = new Date(year, mon);
+
+            let table = '<table><tr><th>MO</th><th>TU</th><th>WE</th><th>TH</th><th>FR</th><th>SA</th><th>SU</th></tr><tr>';
+
+                // spaces for the first row
+                // from monday till the first day of the month
+
+            for(let i = 0; i < getDay(d); i++) {
+                table = table + '<td></td>';
+            }
+
+             // <td> with actual dates
+            while (d.getMonth() == mon) {
+                table += '<td>' + d.getDate() + '</td>';
+
+                if(getDay(d) % 7 == 6) {
+                    table += '</tr><tr>';
+                }
+                d.setDate(d.getDate() + 1);
+            }
+
+            if (getDay(d) != 0) {
+                for(let i = getDay(d); i < 7; i++) {
+                    table += '<td></td';
+                }
+            }
+            table += '</tr></table>';
+
+            elem.innerHTML = table;
+        }
+
+        function getDay(date) {
+            let day = date.getDay();
+            if (day == 0) day = 7;
+            return day - 1;
+        }
+
+        createCalendar(calendar, 2012, 9);
+
+    </script> -->
+
+
+
+
+
+
         <!-- <table id="table">
                 aaa
                 <tr>
@@ -177,12 +230,67 @@
     </div> -->
 
 
+<!-- <div id="container"></div> -->
 
 
 
+<!-- <ul>
+        <li>Animals
+          <ul>
+            <li>Mammals
+              <ul>
+                <li>Cows</li>
+                <li>Donkeys</li>
+                <li>Dogs</li>
+                <li>Tigers</li>
+              </ul>
+            </li>
+            <li>Other
+              <ul>
+                <li>Snakes</li>
+                <li>Birds</li>
+                <li>Lizards</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>Fishes
+          <ul>
+            <li>Aquarium
+              <ul>
+                <li>Guppy</li>
+                <li>Angelfish</li>
+              </ul>
+            </li>
+            <li>Sea
+              <ul>
+                <li>Sea trout</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
 
 
+      <script>
+      
+        let lis = document.getElementsByTagName('li');
+     
+        for(let li of lis) {
+            // get the count of all <li> below this <li>
+            let descendantsCount = li.getElementsByTagName('li').length;
+            if(!descendantsCount) continue;
 
+         // add directly to the text node.
+         li.firstChild.data += '[' + descendantsCount + ']';
+        }
+ -->
+
+
+      
+    
+
+      </script>
 
 
     <script src="modify.js"></script>
